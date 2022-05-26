@@ -1,3 +1,9 @@
+.justify {
+  text-align: justify;
+  text-justify:distribute-all-lines; // 这行必加，兼容ie浏览器
+  text-align-last: left;
+}
+
 .mobile {
   padding-bottom: 1.75rem;
   min-width: auto;
@@ -170,11 +176,11 @@
     .module-english-title {
       width: 100%;
       p {
-        width: 4.4rem;
+        width: 2.8rem;
       }
       &:after {
-        width: 6rem;
-        margin-left: -3rem;
+        width: 5rem;
+        margin-left: -2.5rem;
       }
     }
   }
@@ -196,7 +202,7 @@
       padding: 0.18rem 0;
       margin-top: 0;
       width: 100%;
-      border-bottom: 1px solid #787878;
+      border-bottom: none !important;
       .icon {
         width: 1.06rem;
         height: 1.06rem;
@@ -213,7 +219,18 @@
           font-size: 0.2rem;
           line-height: 0.3rem;
           margin-top: 0.08rem;
+          @extend .justify;
         }
+        &.center {
+          right: 0.2rem;
+        }
+      }
+    }
+    .center-advantage {
+      &:after {
+        height: 1.06rem !important;
+        top: 0.18rem !important;
+        left: 1.06rem !important;
       }
     }
   }
@@ -285,25 +302,28 @@
           vertical-align: top;
         }
         .content {
-          width: 3.8rem;
           float: none;
-          padding-top: 0.72rem;
+          padding-top: 0.45rem;
           margin-left: 0.45rem;
+          display: block;
+          width: 88vw;
           .title {
             font-size: 0.35rem;
             line-height: 0.35rem;
             height: auto;
+            color: #3E3A39;
           }
           .sub-title {
             font-size: 0.18rem;
-            line-height: 0.26rem;
+            line-height: 0.32rem;
+            color: #3E3A39;
           }
         }
       }
     }
 
     .online-series {
-      padding: 1.26rem 0 0.99rem;
+      padding: 4.2rem 0 0.99rem;
       .series-box {
         width: 100% !important;
         margin-top: 0;
@@ -313,6 +333,7 @@
           .series-item-text {
             width: 3rem;
             height: 0.5rem;
+            line-height: 0.5rem;
             font-size: 0.14rem;
           }
         }
@@ -377,7 +398,8 @@
     }
 
     .offline-series {
-      height: 6.4rem;
+      height: 6rem;
+      padding-top: 0.59rem !important;
       .inner-box {
         width: 100% !important;
         overflow: hidden;
@@ -390,7 +412,7 @@
         .content {
           width: 3.3rem !important;
           float: none !important;
-          padding: 0.8rem 0 0;
+          padding: 0.3rem 0 0;
           margin-left: 0.2rem;
           .title {
             width: 2.6rem;
@@ -399,8 +421,8 @@
           }
           .sub-title {
             margin-top: 0.16rem;
-            font-size: 0.16rem;
-            line-height: 0.24rem;
+            font-size: 0.2rem;
+            line-height: 0.3rem;
           }
         }
       }
@@ -416,7 +438,7 @@
             top: 0.18rem !important;
           }
           .text {
-            padding-left: 1.22rem;
+            padding-left: 1.25rem;
             float: none !important;
             width: auto !important;
           }
@@ -451,22 +473,27 @@
           float: none;
           padding-top: 0.1rem;
           margin-left: 0.45rem;
+          margin-top: 0.3rem;
+          display: block;
+          width: 88vw;
           .title {
             font-size: 0.35rem;
             line-height: 0.35rem;
             height: auto;
+            color: #3E3A39;
           }
           .sub-title {
             font-size: 0.18rem;
-            line-height: 0.26rem;
+            line-height: 0.32rem;
             margin-top: 0.1rem;
+            color: #3E3A39;
           }
         }
       }
     }
 
     .product-introduction {
-      padding-top: 1.26rem !important;
+      padding-top: 3rem !important;
     }
 
     .product-introduction-image-text {
@@ -514,7 +541,7 @@
             top: 0.18rem !important;
           }
           .text {
-            padding-left: 1.22rem;
+            padding-left: 1.25rem;
             float: none !important;
             width: auto !important;
           }
@@ -549,22 +576,26 @@
           float: none;
           padding-top: 0.5rem;
           margin-left: 0.45rem;
+          display: block;
+          width: 88vw;
           .title {
             font-size: 0.35rem;
             line-height: 0.35rem;
             height: auto;
+            color: #3E3A39;
           }
           .sub-title {
             font-size: 0.18rem;
-            line-height: 0.26rem;
+            line-height: 0.32rem;
             margin-top: 0.1rem;
+            color: #3E3A39;
           }
         }
       }
     }
 
     .product-introduction {
-      padding-top: 1.26rem !important;
+      padding-top: 4.2rem !important;
     }
 
     .product-introduction-image-text {
@@ -611,7 +642,7 @@
             top: 0.18rem !important;
           }
           .text {
-            padding-left: 1.22rem;
+            padding-left: 1.25rem;
             float: none !important;
             width: auto !important;
             &.center {

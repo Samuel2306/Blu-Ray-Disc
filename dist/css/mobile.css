@@ -1,3 +1,5 @@
+.justify, .mobile .advantage-list > li .text .content { text-align: justify; text-justify: distribute-all-lines; text-align-last: left; }
+
 .mobile { padding-bottom: 1.75rem; min-width: auto; }
 
 .mobile .navbar { display: none; }
@@ -64,9 +66,9 @@
 
 .mobile .advantages .module-english-title { width: 100%; }
 
-.mobile .advantages .module-english-title p { width: 4.4rem; }
+.mobile .advantages .module-english-title p { width: 2.8rem; }
 
-.mobile .advantages .module-english-title:after { width: 6rem; margin-left: -3rem; }
+.mobile .advantages .module-english-title:after { width: 5rem; margin-left: -2.5rem; }
 
 .mobile .advantage-list { display: block; width: 88vw; float: none; font-size: 0; margin-top: 0.5rem; padding-bottom: 0; }
 
@@ -74,7 +76,7 @@
 
 .mobile .advantage-list:last-child { padding-bottom: 0.66rem; }
 
-.mobile .advantage-list > li { padding: 0.18rem 0; margin-top: 0; width: 100%; border-bottom: 1px solid #787878; }
+.mobile .advantage-list > li { padding: 0.18rem 0; margin-top: 0; width: 100%; border-bottom: none !important; }
 
 .mobile .advantage-list > li .icon { width: 1.06rem; height: 1.06rem; }
 
@@ -83,6 +85,10 @@
 .mobile .advantage-list > li .text .title { font-size: 0.25rem; line-height: 0.25rem; }
 
 .mobile .advantage-list > li .text .content { font-size: 0.2rem; line-height: 0.3rem; margin-top: 0.08rem; }
+
+.mobile .advantage-list > li .text.center { right: 0.2rem; }
+
+.mobile .advantage-list .center-advantage:after { height: 1.06rem !important; top: 0.18rem !important; left: 1.06rem !important; }
 
 .mobile .application { text-align: center; padding-bottom: 0.3rem; }
 
@@ -112,19 +118,19 @@
 
 .mobile .DRP-BL .banner .inner-box .img { width: 2.6rem; float: none; vertical-align: top; }
 
-.mobile .DRP-BL .banner .inner-box .content { width: 3.8rem; float: none; padding-top: 0.72rem; margin-left: 0.45rem; }
+.mobile .DRP-BL .banner .inner-box .content { float: none; padding-top: 0.45rem; margin-left: 0.45rem; display: block; width: 88vw; }
 
-.mobile .DRP-BL .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; }
+.mobile .DRP-BL .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; color: #3E3A39; }
 
-.mobile .DRP-BL .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.26rem; }
+.mobile .DRP-BL .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.32rem; color: #3E3A39; }
 
-.mobile .DRP-BL .online-series { padding: 1.26rem 0 0.99rem; }
+.mobile .DRP-BL .online-series { padding: 4.2rem 0 0.99rem; }
 
 .mobile .DRP-BL .online-series .series-box { width: 100% !important; margin-top: 0; }
 
 .mobile .DRP-BL .online-series .series-box .series-item { width: 1.65rem; margin-top: 1rem; }
 
-.mobile .DRP-BL .online-series .series-box .series-item .series-item-text { width: 3rem; height: 0.5rem; font-size: 0.14rem; }
+.mobile .DRP-BL .online-series .series-box .series-item .series-item-text { width: 3rem; height: 0.5rem; line-height: 0.5rem; font-size: 0.14rem; }
 
 .mobile .DRP-BL .online-series .series-box1 .series-item:nth-child(1) { height: 5.25rem; width: 100%; }
 
@@ -150,17 +156,17 @@
 
 .mobile .DRP-BL .online-series .series-box2 .series-item:nth-child(3) .series-item-text { left: 50%; transform: translate(-50%, 0); }
 
-.mobile .DRP-BL .offline-series { height: 6.4rem; }
+.mobile .DRP-BL .offline-series { height: 6rem; padding-top: 0.59rem !important; }
 
 .mobile .DRP-BL .offline-series .inner-box { width: 100% !important; overflow: hidden; text-align: center; }
 
 .mobile .DRP-BL .offline-series .inner-box img { width: 3.5rem !important; vertical-align: top; float: none !important; }
 
-.mobile .DRP-BL .offline-series .inner-box .content { width: 3.3rem !important; float: none !important; padding: 0.8rem 0 0; margin-left: 0.2rem; }
+.mobile .DRP-BL .offline-series .inner-box .content { width: 3.3rem !important; float: none !important; padding: 0.3rem 0 0; margin-left: 0.2rem; }
 
 .mobile .DRP-BL .offline-series .inner-box .content .title { width: 2.6rem; height: 0.5rem; font-size: 0.14rem; }
 
-.mobile .DRP-BL .offline-series .inner-box .content .sub-title { margin-top: 0.16rem; font-size: 0.16rem; line-height: 0.24rem; }
+.mobile .DRP-BL .offline-series .inner-box .content .sub-title { margin-top: 0.16rem; font-size: 0.2rem; line-height: 0.3rem; }
 
 .mobile .DRP-BL .advantages { padding-top: 1.09rem !important; }
 
@@ -168,7 +174,7 @@
 
 .mobile .DRP-BL .advantages .advantage-list li img { top: 0.18rem !important; }
 
-.mobile .DRP-BL .advantages .advantage-list li .text { padding-left: 1.22rem; float: none !important; width: auto !important; }
+.mobile .DRP-BL .advantages .advantage-list li .text { padding-left: 1.25rem; float: none !important; width: auto !important; }
 
 .mobile .DRP-BL .application { padding-top: 0.61rem !important; }
 
@@ -182,13 +188,13 @@
 
 .mobile .DRP-BR .banner .inner-box .img { width: 3.2rem; float: none; vertical-align: top; }
 
-.mobile .DRP-BR .banner .inner-box .content { width: 3.4rem; float: none; padding-top: 0.1rem; margin-left: 0.45rem; }
+.mobile .DRP-BR .banner .inner-box .content { width: 3.4rem; float: none; padding-top: 0.1rem; margin-left: 0.45rem; margin-top: 0.3rem; display: block; width: 88vw; }
 
-.mobile .DRP-BR .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; }
+.mobile .DRP-BR .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; color: #3E3A39; }
 
-.mobile .DRP-BR .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.26rem; margin-top: 0.1rem; }
+.mobile .DRP-BR .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.32rem; margin-top: 0.1rem; color: #3E3A39; }
 
-.mobile .DRP-BR .product-introduction { padding-top: 1.26rem !important; }
+.mobile .DRP-BR .product-introduction { padding-top: 3rem !important; }
 
 .mobile .DRP-BR .product-introduction-image-text { margin-top: 0.8rem; padding-bottom: 1.35rem; width: 100% !important; }
 
@@ -212,7 +218,7 @@
 
 .mobile .DRP-BR .advantages .advantage-list li img { top: 0.18rem !important; }
 
-.mobile .DRP-BR .advantages .advantage-list li .text { padding-left: 1.22rem; float: none !important; width: auto !important; }
+.mobile .DRP-BR .advantages .advantage-list li .text { padding-left: 1.25rem; float: none !important; width: auto !important; }
 
 .mobile .DRP-BR .application { padding-top: 0.61rem !important; }
 
@@ -226,13 +232,13 @@
 
 .mobile .DRP-BF .banner .inner-box .img { width: 3.2rem; float: none; vertical-align: top; }
 
-.mobile .DRP-BF .banner .inner-box .content { width: 3.4rem; float: none; padding-top: 0.5rem; margin-left: 0.45rem; }
+.mobile .DRP-BF .banner .inner-box .content { width: 3.4rem; float: none; padding-top: 0.5rem; margin-left: 0.45rem; display: block; width: 88vw; }
 
-.mobile .DRP-BF .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; }
+.mobile .DRP-BF .banner .inner-box .content .title { font-size: 0.35rem; line-height: 0.35rem; height: auto; color: #3E3A39; }
 
-.mobile .DRP-BF .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.26rem; margin-top: 0.1rem; }
+.mobile .DRP-BF .banner .inner-box .content .sub-title { font-size: 0.18rem; line-height: 0.32rem; margin-top: 0.1rem; color: #3E3A39; }
 
-.mobile .DRP-BF .product-introduction { padding-top: 1.26rem !important; }
+.mobile .DRP-BF .product-introduction { padding-top: 4.2rem !important; }
 
 .mobile .DRP-BF .product-introduction-image-text { margin-top: 0.8rem; padding-bottom: 1.35rem; width: 100% !important; }
 
@@ -256,7 +262,7 @@
 
 .mobile .DRP-BF .advantages .advantage-list li img { top: 0.18rem !important; }
 
-.mobile .DRP-BF .advantages .advantage-list li .text { padding-left: 1.22rem; float: none !important; width: auto !important; }
+.mobile .DRP-BF .advantages .advantage-list li .text { padding-left: 1.25rem; float: none !important; width: auto !important; }
 
 .mobile .DRP-BF .advantages .advantage-list li .text.center { left: 0 !important; }
 

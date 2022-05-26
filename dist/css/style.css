@@ -6,6 +6,8 @@ select, input, img, select { vertical-align: middle; }
 
 a { text-decoration: none; }
 
+.justify, .wrapper .module .introduce-paragraph, .wrapper .advantages.blackBg .advantage-list .center-advantage .text .content, .wrapper .advantage-list li .text .content, .wrapper .DRP-BL .banner .content .sub-title, .wrapper .DRP-BL .offline-series .inner-box .content .sub-title, .wrapper .DRP-BR .banner .content .sub-title, .wrapper .DRP-BF .banner .content .sub-title { text-align: justify; text-justify: distribute-all-lines; text-align-last: left; }
+
 .wrapper { position: relative; overflow-x: hidden; min-width: 767px; }
 
 .wrapper .navbar { position: fixed; top: 0; left: 0; height: 73px; width: 100%; z-index: 2000; margin-bottom: 0; background-color: rgba(0, 0, 0, 0.8); border-radius: 0; border: none; }
@@ -83,7 +85,7 @@ a { text-decoration: none; }
 
 .wrapper .module.black .module-english-title p { background-color: #020202; color: #fff; }
 
-.wrapper .module .module-title { text-align: center; height: 40px; font-size: 40px; font-family: MicrosoftYaHei; font-weight: bold; color: #3E3A39; }
+.wrapper .module .module-title { text-align: center; height: 40px; font-size: 40px; font-family: MicrosoftYaHei; font-weight: 400; color: #3E3A39; }
 
 .wrapper .module .module-title.complex-bg { color: #fff; }
 
@@ -93,9 +95,13 @@ a { text-decoration: none; }
 
 .wrapper .module .module-english-title:after { content: ''; position: absolute; left: 50%; top: 10px; width: 337px; height: 1px; margin-left: -168px; background-color: #898989; z-index: 1; }
 
-.wrapper .module .introduce-paragraph { max-width: 906px; width: 88% !important; font-size: 14px; font-family: MicrosoftYaHeiLight; font-weight: 300; color: #3E3A39; line-height: 24px; word-break: break-word; overflow-wrap: break-word; margin: 35px auto 0; text-align: left; }
+.wrapper .module .introduce-paragraph { max-width: 906px; width: 88% !important; font-size: 14px; font-family: MicrosoftYaHeiLight; font-weight: 300; color: #3E3A39; line-height: 24px; word-break: break-word; overflow-wrap: break-word; margin: 35px auto 0; }
 
 .wrapper .advantages { text-align: center; }
+
+.wrapper .advantages.blackBg .advantage-list .center-advantage:after { content: ''; height: 106px; position: absolute; left: 106px; right: 0; top: 0; background-color: #B1B1B1; }
+
+.wrapper .advantages.blackBg .advantage-list .center-advantage .text .content { color: #3E3A39 !important; }
 
 .wrapper .advantages.blackBg .advantage-list .text .title, .wrapper .advantages.blackBg .advantage-list .text .content { color: #fff; }
 
@@ -109,19 +115,21 @@ a { text-decoration: none; }
 
 .wrapper .advantage-list li .text { float: right; width: 378px; }
 
-.wrapper .advantage-list li .text .title { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: bold; color: #3E3A39; line-height: 24px; }
+.wrapper .advantage-list li .text .title { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: 400; color: #3E3A39; line-height: 24px; }
 
 .wrapper .advantage-list li .text .content { font-size: 14px; font-family: MicrosoftYaHeiLight; color: #3E3A39; font-weight: 300; line-height: 18px; }
 
-.wrapper .advantage-list li .text.center { position: absolute; top: 50%; left: 122px; right: 0; transform: translate(0, -50%); }
+.wrapper .advantage-list li .text.center { position: absolute; top: 50%; left: 125px; right: 20px; transform: translate(0, -50%); z-index: 1; width: auto; float: none; }
 
 @media screen and (max-width: 1200px) { .wrapper .advantages { font-size: 0; }
+  .wrapper .advantages .module-english-title { margin-bottom: 31px; }
   .wrapper .advantage-list { width: 70%; padding-bottom: 0; }
   .wrapper .advantage-list + .advantage-list { margin-left: 0; padding-bottom: 80px; }
   .wrapper .advantage-list + .advantage-list > li:last-child { border-bottom: none; }
   .wrapper .advantage-list > li { position: relative; padding: 20px 0; margin-top: 0; border-bottom: 1px solid #787878; height: 146px; }
   .wrapper .advantage-list > li img { position: absolute; top: 20px; left: 0; float: none; }
-  .wrapper .advantage-list .text { float: none !important; padding-left: 122px; width: auto !important; }
+  .wrapper .advantage-list .center-advantage:after { top: 20px !important; }
+  .wrapper .advantage-list .text { float: none !important; padding-left: 125px; width: auto !important; }
   .wrapper .advantage-list .text.center { padding-left: 0; } }
 
 .wrapper .product-parameters-image { width: 988px; display: block; margin: 44px auto 0; padding-bottom: 130px; }
@@ -215,7 +223,7 @@ a { text-decoration: none; }
 
 .wrapper .DRP-BR .product-introduction-image-text .inner-box .list .title { font-size: 14px; font-family: MicrosoftYaHeiLight; font-weight: 400; color: #FFFFFF; line-height: 14px; background: #5C5C5C; border-radius: 6px; padding: 8px 34px; display: inline-block; margin: 22px 0 15px; }
 
-.wrapper .DRP-BR .product-introduction-image-text .inner-box .list li { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: bold; color: #3E3A39; line-height: 24px; padding-left: 10px; position: relative; }
+.wrapper .DRP-BR .product-introduction-image-text .inner-box .list li { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: 400; color: #3E3A39; line-height: 24px; padding-left: 10px; position: relative; }
 
 .wrapper .DRP-BR .product-introduction-image-text .inner-box .list li:before { content: ''; position: absolute; top: 8px; left: 3px; width: 4px; height: 4px; background-color: #29ACF7; }
 
@@ -273,7 +281,7 @@ a { text-decoration: none; }
 
 .wrapper .DRP-BF .product-introduction-image-text .inner-box .list .title { font-size: 14px; font-family: MicrosoftYaHeiLight; font-weight: 400; color: #FFFFFF; line-height: 14px; background: #5C5C5C; border-radius: 6px; padding: 8px 34px; display: inline-block; margin: 22px 0 15px; }
 
-.wrapper .DRP-BF .product-introduction-image-text .inner-box .list li { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: bold; color: #3E3A39; line-height: 24px; padding-left: 10px; position: relative; }
+.wrapper .DRP-BF .product-introduction-image-text .inner-box .list li { font-size: 16px; font-family: MicrosoftYaHeiLight; font-weight: 400; color: #3E3A39; line-height: 24px; padding-left: 10px; position: relative; }
 
 .wrapper .DRP-BF .product-introduction-image-text .inner-box .list li:before { content: ''; position: absolute; top: 8px; left: 3px; width: 4px; height: 4px; background-color: #29ACF7; }
 

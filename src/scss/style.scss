@@ -14,6 +14,12 @@ a {
   text-decoration:none;
 }
 
+.justify {
+  text-align: justify;
+  text-justify:distribute-all-lines; // 这行必加，兼容ie浏览器
+  text-align-last: left;
+}
+
 .wrapper {
   position: relative;
   $navbar-height: 73px;
@@ -262,7 +268,7 @@ a {
       height: 40px;
       font-size: 40px;
       font-family: MicrosoftYaHei;
-      font-weight: bold;
+      font-weight: 400;
       color: #3E3A39;
 
       &.complex-bg {
@@ -311,7 +317,7 @@ a {
       word-break: break-word;
       overflow-wrap: break-word;
       margin: 35px auto 0;
-      text-align: left;
+      @extend .justify;
     }
   }
 
@@ -319,6 +325,23 @@ a {
     text-align: center;
     &.blackBg {
       .advantage-list {
+        .center-advantage {
+          &:after {
+            content: '';
+            height: 106px;
+            position: absolute;
+            left: 106px;
+            right: 0;
+            top: 0;
+            background-color: #B1B1B1;
+          }
+          .text {
+            .content {
+              color: #3E3A39 !important;
+              @extend .justify;
+            }
+          }
+        }
         .text {
           .title, .content {
             color: #fff;
@@ -354,7 +377,7 @@ a {
         .title {
           font-size: 16px;
           font-family: MicrosoftYaHeiLight;
-          font-weight: bold;
+          font-weight: 400;
           color: #3E3A39;
           line-height: 24px;
         }
@@ -364,13 +387,17 @@ a {
           color: #3E3A39;
           font-weight: 300;
           line-height: 18px;
+          @extend .justify;
         }
         &.center {
           position: absolute;
           top: 50%;
-          left: 122px;
-          right: 0;
+          left: 125px;
+          right: 20px;
           transform: translate(0, -50%);
+          z-index: 1;
+          width: auto;
+          float: none;
         }
       }
     }
@@ -379,6 +406,9 @@ a {
   @media screen and (max-width: 1200px) {
     .advantages {
       font-size: 0;
+      .module-english-title {
+        margin-bottom: 31px;
+      }
     }
     .advantage-list {
       width: 70%;
@@ -406,9 +436,15 @@ a {
         }
       }
 
+      .center-advantage {
+        &:after {
+          top: 20px !important;
+        }
+      }
+
       .text {
         float: none !important;
-        padding-left: 122px;
+        padding-left: 125px;
         width: auto !important;
         &.center {
           padding-left: 0;
@@ -483,6 +519,7 @@ a {
           font-weight: 300;
           color: #FFFFFF;
           margin-top: 24px;
+          @extend .justify;
         }
       }
     }
@@ -570,6 +607,7 @@ a {
             color: #FFFFFF;
             line-height: 24px;
             margin-top: 28px;
+            @extend .justify;
           }
         }
       }
@@ -678,6 +716,7 @@ a {
           font-weight: 300;
           color: #FFFFFF;
           margin-top: 24px;
+          @extend .justify;
         }
       }
     }
@@ -726,7 +765,7 @@ a {
           li {
             font-size: 16px;
             font-family: MicrosoftYaHeiLight;
-            font-weight: bold;
+            font-weight: 400;
             color: #3E3A39;
             line-height: 24px;
             padding-left: 10px;
@@ -868,6 +907,7 @@ a {
           font-weight: 300;
           color: #FFFFFF;
           margin-top: 24px;
+          @extend .justify;
         }
       }
 
@@ -921,7 +961,7 @@ a {
           li {
             font-size: 16px;
             font-family: MicrosoftYaHeiLight;
-            font-weight: bold;
+            font-weight: 400;
             color: #3E3A39;
             line-height: 24px;
             padding-left: 10px;
