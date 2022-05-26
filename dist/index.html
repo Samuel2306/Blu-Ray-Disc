@@ -4,378 +4,589 @@
   <meta charset="UTF-8">
   <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"  name="viewport" />
   <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
 </head>
 <body>
   <div class="wrapper" id="wrapper">
-    <div class="banner">
-      <div class="content">
-        <h2 class="title">
-          电子档案安全保存光磁库
-        </h2>
-        <p class="sub-title">
-          Magneto-optical Library for Safe Preservation of Electronic Archives
-        </p>
-        <video controls preload="auto">
-          <source src="./media/introduce.mp4" type="video/mp4">
-          您的浏览器不支持 video 标签。
-        </video>
-      </div>
-    </div>
-
-    <div class="module gray product-introduction">
-      <div class="module-title">
-        产品简介
-      </div>
-      <div class="module-english-title">
-        <p>
-          PRODUCT INTRODUCTION
-        </p>
-      </div>
-      <div class="introduce-paragraph" style="width: 912px;">
-        电子档案安全保存光磁库是针对档案数字资源长期保存、备份的需求，以分级存储、四性检测、监控预警等技术为基础打造的软硬件一体机。该产品综合应用了蓝光光盘、磁盘、固态硬盘等多种存储介质，通过管理软件可自动按照备份策略开展数据备份，定期对档案数字资源开展四性检测，实时对设备运行状态进行全方位监控，打造电子档案长期保存的“安全库房”。
-      </div>
-      <div class="product-introduction-image-text">
-        <img class="center" src="./images/introduce_center.png" alt="">
-        <img class="center_mobile" src="./images/introduce_center_mobile.png" alt="">
-        <div class="inner-box">
-          <div class="left-top introduction-item">
-            <img src="./images/introduce_left_top.jpg" alt="">
-            <h3 class="title">
-              主机模块
-            </h3>
-            <ul class="list">
-              <li>
-                高性能服务器
-              </li>
-              <li>
-                支持国产CPU
-              </li>
-              <li>
-                与管理软件无缝集成
-              </li>
-            </ul>
-          </div>
-          <div class="left-bottom introduction-item">
-            <img src="./images/introduce_left_bottom.jpg" alt="">
-            <h3 class="title">
-              存储模块
-            </h3>
-            <ul class="list">
-              <li>
-                磁光电融合存储方案
-              </li>
-              <li>
-                在线存储选用大容量磁盘阵列
-              </li>
-              <li>
-                近线和离线存储选用光盘
-              </li>
-              <li>
-                高速缓存选用固态硬盘
-              </li>
-            </ul>
-          </div>
-          <div class="right-top introduction-item">
-            <img src="./images/introduce_right_top.jpg" alt="">
-            <h3 class="title">
-              监控模块
-            </h3>
-            <ul class="list">
-              <li>
-                全方位监控设备运行状态
-              </li>
-              <li>
-                故障智能预警
-              </li>
-            </ul>
-          </div>
-          <div class="right-bottom introduction-item">
-            <img src="./images/introduce_right_bottom.jpg" alt="">
-            <h3 class="title">
-              管理软件
-            </h3>
-            <ul class="list">
-              <li>
-                电子档案长期保存系统
-              </li>
-              <li>
-                保存策略设置
-              </li>
-              <li>
-                一键入库/一键盘库/一键出库
-              </li>
-              <li>
-                自动化巡检恢复
-              </li>
-              <li>
-                可视化数据展示
-              </li>
-            </ul>
-          </div>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </div>
-
-      <div class="product-introduction-list-box">
-        <ul class="product-introduction-list">
-          <li>
-            <h4 class="title">
-              DRP-BX40
-            </h4>
-            <img src="./images/introduce_machine1.png" alt="" style="width: 88px; position: absolute; left: 50%; margin-left: -44px; bottom: 122px;">
-            <div class="detail">
-              <div class="detail-top">
-                入门级
-              </div>
-              <ul class="detail-content">
-                <li>小型档案室</li>
-              </ul>
-            </div>
-          </li>
-
-          <li>
-            <h4 class="title">
-              DRP-BX90
-            </h4>
-            <img src="./images/introduce_machine2.png" alt="" style="width: 75px; position: absolute; left: 50%; margin-left: -38px; bottom: 113px;">
-            <div class="detail">
-              <div class="detail-top">
-                标准级
-              </div>
-              <ul class="detail-content">
-                <li>区县级档案馆</li>
-                <li>中型档案室</li>
-              </ul>
-            </div>
-          </li>
-
-          <!--<div class="br" style="display: none;"></div>-->
-
-          <li>
-            <h4 class="title">
-              DRP-BX150
-            </h4>
-            <img src="./images/introduce_machine3.png" alt="" style="width: 133px; position: absolute; left: 50%; margin-left: -66px; bottom: 118px;">
-            <div class="detail">
-              <div class="detail-top">
-                企业级
-              </div>
-              <ul class="detail-content">
-                <li>地市级档案馆</li>
-                <li>大型档案室</li>
-              </ul>
-            </div>
-          </li>
-
-          <li style="width: 289px;">
-            <h4 class="title">
-              DRP-BX300+N*BLF640
-            </h4>
-            <img src="./images/introduce_machine4.png" alt="" style="width: 257px; position: absolute; left: 50%; margin-left: -129px; bottom: 103px;">
-            <div class="detail">
-              <div class="detail-top">
-                数据中心级
-              </div>
-              <ul class="detail-content">
-                <li>（副）省级档案馆</li>
-                <li>特大型档案室</li>
-              </ul>
-            </div>
-          </li>
-
-          <li>
-            <h4 class="title">
-              DRP-BXC150
-            </h4>
-            <img src="./images/introduce_machine5.png" alt="" style="width: 158px; position: absolute; left: 50%; margin-left: -79px; bottom: 113px;">
-            <div class="detail">
-              <div class="detail-top">
-                新一代光磁库旗舰版
-              </div>
-              <ul class="detail-content">
-                <li>档案馆 | 档案室</li>
-                <li>文献中心</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="module gray operation-flow">
-      <div class="module-title">
-        业务流程
-      </div>
-      <div class="module-english-title">
-        <p>
-          OPERATION FLOw
-        </p>
-      </div>
-      <div class="introduce-paragraph" style="width: 906px;">
-        针对需要入库的档案数字资源，可以通过在线传输或者离线数据包的方式进入电子档案库房，在正式入库之前，需要进行四性检测，以确保入库数据的规范。档案数字资源正式进入库房后，通过磁盘阵列进行在线存储，通过光盘库实现近线、离线存储和备份。在保存过程中，将对档案数字资源定期进行检测，发现问题及时进行数据恢复。同时，在保存过程中将对存储备份设备进行监控，以确保及时发现设备或者系统故障，充分保证数据安全。 在系统设计过程中，为了最大限度的减轻档案工作人员的工作量，系统采用了“一键保存”的设计思路，通过一键操作，即可按照预先设置的四性检测策略、存储备份策略等，基于规范的保存流程，自动化的执行四性检测、数据多套备份等操作，全程无需人工干预。简化操作，提升了系统的自动化程度。
-      </div>
-      <img class="operation-flow-image" src="./images/operation_flow.png" alt="">
-    </div>
-
-    <div class="module black product-parameters">
-      <div class="module-title">
-        产品参数
-      </div>
-      <div class="module-english-title">
-        <p>
-          PRODUCT PARAMETERS
-        </p>
-      </div>
-      <img class="product-parameters-image" src="./images/production_parameters.png" alt="">
-    </div>
-
-    <div class="module gray advantages">
-      <div class="module-title">
-        优势特色
-      </div>
-      <div class="module-english-title">
-        <p>
-          ADVANTAGES AND CHARACTERISTICS
-        </p>
-      </div>
-      <ul class="advantage-list">
-        <li>
-          <img class="icon" src="./images/advantage_icon1.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              软硬件一体，开箱即用
-            </div>
-            <div class="content">
-              产品易实施，只要连通网线、接上电源即可使用，无需复杂的安装、部署和调试过程，开箱即用。
-            </div>
-          </div>
-        </li>
-        <li>
-          <img class="icon" src="./images/advantage_icon3.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              磁光电多种存储介质，绿色节能低成本
-            </div>
-            <div class="content">
-              综合采用了磁盘、蓝光光盘、固态硬盘等多种存储介质，充分发挥各种存储介质的优势，延长数据保存时间，消除单一存储介质带来的技术风险；档案级蓝光光盘的寿命可达50年，超长的换代周期，超低的运维投入、绿色节能，省心省力。
-            </div>
-          </div>
-        </li>
-        <li>
-          <img class="icon" src="./images/advantage_icon5.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              3-2-1存储备份策略，满足档案备份要求
-            </div>
-            <div class="content">
-              支持电子档案多套备份，在线存储区保存1套，按照备份策略复制2套至近线备份区，其中1套可用于离线备份，满足档案管理规定的异质、异地备份要求。
-            </div>
-          </div>
-        </li>
-      </ul>
-
-      <ul class="advantage-list">
-        <li>
-          <img class="icon" src="./images/advantage_icon2.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              三重认证方式，确保数据安全
-            </div>
-            <div class="content">
-              主机模块嵌入了人脸识别、指纹识别、智能卡认证三种认证模块，只有通过认证才能进行档案数据入库、出库等操作，确保数据安全。
-            </div>
-          </div>
-        </li>
-        <li>
-          <img class="icon" src="./images/advantage_icon4.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              一键式备份恢复，减轻工作量
-            </div>
-            <div class="content">
-              管理软件可按照设置的备份策略，一键式开展电子档案备份、检测、入库、盘点等操作，可定期对存储介质、数据进行巡检，发现问题及时进行数据恢复。
-            </div>
-          </div>
-        </li>
-        <li>
-          <img class="icon" src="./images/advantage_icon6.jpg" alt="">
-          <div class="text">
-            <div class="title">
-              智能监控预警，消除安全风险
-            </div>
-            <div class="content">
-              监控模块可对设备运行状态、存储介质空间阈值、系统运行状态等全方位进行监控，发现故障将第一时间通过邮件、短信等多种方式向工作人员发出预警，并密切跟踪预警信息的处理过程，确保安全风险得到及时处理。
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="module gray application">
-      <div class="bg"></div>
-      <div class="module-title complex-bg">
-        应用场景
-      </div>
-      <div class="module-english-title complex-bg">
-        <p>
-          <span class="line left"></span>
-          APPLICATION SCENARIO
-          <span class="line right"></span>
-        </p>
-      </div>
-      <div class="detail">
-        <img src="./images/application_detail1.jpg" alt="" class="main-image">
-        <div class="others">
-          <p>
-            伴随着档案数字化成果、电子文件、电子档案涌入政府、企事业单位的档案部门，档案数据已经呈现几何级增长趋势。然而存储载体的质量、寿命与存储环境难以把控，档案数据面临严重的安全隐患。光磁库采用磁光电混合存储模式，全面满足对档案数据的存储、监控、检测、管理与备份需求，实现档案数据的长期安全保存。
-          </p>
-          <ul>
-            <li>
-              <div class="mask">
-                <span>数字档案馆（室）建设</span>
-              </div>
-              <img src="./images/application_detail2.jpg" alt="">
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="DRP-BL" class="item active">
+              <a>
+                <span class="icon"><img src="./images/DRP_BL_icon.png" alt=""></span>
+                <span class="text">DRP-BL 蓝光光盘库</span>
+              </a>
             </li>
-            <li>
-              <div class="mask">
-                <span>档案数据长期保存</span>
-              </div>
-              <img src="./images/application_detail3.jpg" alt="">
+            <li id="DRP-BR" class="item">
+              <a>
+                <span class="icon"><img src="./images/DRP_BR_icon.png" alt=""></span>
+                <span class="text">DRP-BR 光盘刻录机</span>
+              </a>
             </li>
-            <li>
-              <div class="mask">
-                <span>档案数据异质备份</span>
-              </div>
-              <img src="./images/application_detail4.jpg" alt="">
-            </li>
-            <li>
-              <div class="mask">
-                <span>档案数据异地备份</span>
-              </div>
-              <img src="./images/application_detail5.jpg" alt="">
+            <li id="DRP-BF" class="item">
+              <a>
+                <span class="icon"><img src="./images/DRP_BF_icon.png" alt=""></span>
+                <span class="text">DRP-BF 光盘摆渡机</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <img class="bg" src="./images/application_bg.png" />
+    <ul class="mobile-tab">
+      <li id="mobile-DRP-BL" class="item active">
+        <div class="icon">
+          <img src="./images/DRP_BL_icon.png" alt="">
+        </div>
+        <div class="text">
+          DRP-BL 蓝光光盘库
+        </div>
+      </li>
+      <li id="mobile-DRP-BR" class="item">
+        <div class="icon">
+          <img src="./images/DRP_BR_icon.png" alt="">
+        </div>
+        <div class="text">
+          DRP-BR 光盘刻录机
+        </div>
+      </li>
+      <li id="mobile-DRP-BF" class="item">
+        <div class="icon">
+          <img src="./images/DRP_BF_icon.png" alt="">
+        </div>
+        <div class="text">
+          DRP-BF 光盘摆渡机
+        </div>
+      </li>
+    </ul>
 
-    <div class="module gray warehouse">
-      <div class="module-title">
-        电子档案库房
+    <div class="DRP-BL hide show">
+      <div class="banner">
+        <div class="inner-box">
+          <img class="img" src="./images/DRP_BL/banner-image.png" />
+          <div class="content">
+            <h2 class="title">
+              DRP-BL 蓝光光盘库
+            </h2>
+            <p class="sub-title">
+              翼存DRP-BL蓝光光盘库是一种以蓝光光盘作为存储载体的具有高可靠性的海量智能存储设备，包括在线光盘库和离线光盘库两大系列。其中在线光盘库可满足近线存储需求，离线光盘库满足离线存储需求。通过两大产品系列的搭配使用，可灵活搭建成“近线+离线”的海量存储系统，减少总体存储成本，降低能耗，提高系统扩展性。
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="module-english-title">
-        <p>
-          ELECTRONIC ARCHIVES WAREHOUSE
-        </p>
+      <div class="module gray online-series">
+        <div class="module-title">
+          在线光盘库系列
+        </div>
+        <div class="module-english-title">
+          <p>
+            高速光盘库系列
+          </p>
+        </div>
+        <div class="introduce-paragraph">
+          DRP-BLO高速光盘库是以蓝光光盘为存储介质的具有高可靠性的自动化海量数据近线网络存储设备。光盘库主要由机械手、驱动器和光盘匣组成，可提供长期安全的数据存储、较高速度的近线数据查询，单台存取速度为36-648MB/s，实际存储容量取决于选用的蓝光光盘的容量。
+        </div>
+
+        <div class="series-box series-box1">
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series1.png" alt="">
+            <div class="series-item-text">
+              DRP-BLO 2105
+            </div>
+          </div>
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series2.png" alt="">
+            <div class="series-item-text">
+              DRP-BLO 3560
+            </div>
+          </div>
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series3.png" alt="">
+            <div class="series-item-text">
+              DRP-BLO 5175
+            </div>
+          </div>
+        </div>
+
+        <div class="module-english-title" style="margin-top: 63px;">
+          <p>
+            高密光盘库系列
+          </p>
+        </div>
+        <div class="introduce-paragraph">
+          DRP-BLOD高密光盘库产品系列是采用现代光盘库结构设计的多盘光盘盒，盒内光盘直接叠放从而达到摆放密度最大化。机械手可以随机调取其中的任意张光盘。密度高，存储容量大，最大存储容量可达到PB级，可以满足数据中心级海量数据存储和备份需求。
+        </div>
+        <div class="series-box series-box2">
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series4.png" alt="">
+            <div class="series-item-text">
+              DRP-BLOD 1152
+            </div>
+          </div>
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series5.png" alt="">
+            <div class="series-item-text">
+              DRP-BLOD 8640
+            </div>
+          </div>
+          <div class="series-item">
+            <img class="series-item-image" src="./images/DRP_BL/series6.png" alt="">
+            <div class="series-item-text">
+              DRP-BLOD 10368
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="introduce-paragraph" style="width: 896px;">
-        由于电子文件易修改、环境依赖、存储载体可分离等特性，单一的备份载体显然无法满足档案数字资源长期安全保存的需要，比较切实可行的措施是采用不同介质多套备份组合的方式来确保档案数据安全。档案部门可以设立电子档案库房来对磁、光、电、胶等各种类型档案数据备份载体进行妥善管理和长期保存。
-        电子档案库房按照档案库房十防要求（防火、防盗、防水、防潮、防尘、防光、防虫、防鼠、防高温、防污染）建设，配备恒温恒湿、监控报警、环境监测等设施设备，主要用于存放电子档案安全保存光磁库、离线光盘库等电子档案存储设备，为档案数字资源的长期安全保存解决后顾之忧。
+
+      <div class="module black offline-series" style="padding-top: 59px;">
+        <div class="module-title">
+          离线光盘库系列
+        </div>
+        <div class="inner-box">
+          <img class="img" src="./images/DRP_BL/offline.png" />
+          <div class="content">
+            <h2 class="title">
+              DRP-BLOD 1152
+            </h2>
+            <p class="sub-title">
+              DRP-BLF离线光盘库采用智能物联网技术，可实现对离线光盘的全方位查询管理。与在线光盘库搭配使用，可灵活搭建成“在线+离线”的海量存储系统，将那些不经常访问又需要长期保存的数据，转存到离线存储设备中，能够大大缓解用户近线存储的需求，不仅可以减少总体存储成本，降低设备能耗，还便于异地保存一份数据。
+            </p>
+          </div>
+        </div>
       </div>
-      <img class="warehouse-img" src="./images/warehouse.png" alt="">
+
+      <div class="module gray advantages" style="padding-top: 109px;">
+        <div class="module-title">
+          优势特色
+        </div>
+        <div class="module-english-title">
+          <p>
+            ADVANTAGES & FEATURES
+          </p>
+        </div>
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage1.png" alt="">
+            <div class="text">
+              <div class="title">
+                符合标准要求
+              </div>
+              <div class="content">
+                严格遵从相关标准规范，保证数据真实不可篡改、长期安全存储、长期兼容可用。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage3.png" alt="">
+            <div class="text">
+              <div class="title">
+                存储能耗少
+              </div>
+              <div class="content">
+                不需要实时加载大功率电源，保存环境无特殊要求，能耗远远低于传统存储。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage5.png" alt="">
+            <div class="text">
+              <div class="title">
+                存储容量大
+              </div>
+              <div class="content">
+                单张蓝光光盘的存储容量已经达到300GB以上，蓝光光盘库的存储容量可达到上百TB甚至PB级别，能轻松应对大容量存储需求。
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage2.png" alt="">
+            <div class="text">
+              <div class="title">
+                安全性高
+              </div>
+              <div class="content">
+                采用WORM存储技术，光盘中的数据一次刻录，多次读取，不可篡改。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage4.png" alt="">
+            <div class="text">
+              <div class="title">
+                存储成本低
+              </div>
+              <div class="content">
+                能够满足大部分数据长期保存要求，且在此期间不需更新存储设备，节省数据迁移成本，避免迁移风险；同时，升级换代的周期比较长，更新换代的成本较低。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BL/advantage6.png" alt="">
+            <div class="text">
+              <div class="title">
+                存储寿命长
+              </div>
+              <div class="content">
+                蓝光光盘具备极强的抗氧化性，能够抵抗极端环境。档案级BD光盘通过了国际权威光盘认证机构ADTC的ISO16963认证，使用寿命可长达50年以上。
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="module black product-parameters">
+        <div class="module-title">
+          产品参数
+        </div>
+        <div class="module-english-title">
+          <p>
+            Product Specification
+          </p>
+        </div>
+        <img class="product-parameters-image" src="./images/DRP_BL/product_params.png" alt="">
+      </div>
+      <div class="module gray application" style="padding-top: 104px;">
+        <div class="module-title">
+          应用场景
+        </div>
+        <div class="module-english-title">
+          <p>
+            APPLICATION SCENARIO
+          </p>
+        </div>
+        <div class="introduce-paragraph">
+          翼存DRP-BL蓝光光盘库可以广泛运用到政府行业、金融行业、医疗行业、互联网行业、媒资管理、气象行业、档案行业等数据集中的行业。
+        </div>
+        <img class="application-image" src="./images/DRP_BL/application.png" alt="">
+      </div>
+    </div>
+
+    <div class="DRP-BR hide">
+      <div class="banner">
+        <div class="inner-box">
+          <img class="img" src="./images/DRP_BR/banner-image.png" />
+          <div class="content">
+            <h2 class="title">
+              DRP-BR 光盘刻录机
+            </h2>
+            <p class="sub-title">
+              翼存DRP-BR光盘刻录机是集光盘盘面打印和光盘刻录两大功能于一身的批量光盘制作设备，可以实现无人值守光盘批量自动刻录和打印功能，提供专业化、批量化的光盘刻录打印一体化发布服务。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="module gray product-introduction" style="padding-top: 126px;">
+        <div class="module-title">
+          产品简介
+        </div>
+        <div class="module-english-title">
+          <p>
+            PRODUCT INTRODUCTION
+          </p>
+        </div>
+        <div class="product-introduction-image-text">
+          <div class="inner-box">
+            <div class="left">
+              <img src="./images/DRP_BR/introduce1.png" alt="">
+              <ul class="list">
+                <div class="title">DRP-BR Alpha2</div>
+                <li>
+                  高分分辨率彩色喷墨打印机：1台
+                </li>
+                <li>
+                  内置服务器：可选
+                </li>
+                <li>
+                  <div>光盘桶数量：4个</div>
+                  <div>最大装载光盘数量：200张</div>
+                  <div>最多装载蓝光驱动器：2台</div>
+                  <div>光盘刻录系统DRP-BS Publisher1.0</div>
+                </li>
+              </ul>
+            </div>
+            <div class="right">
+              <img src="./images/DRP_BR/introduce2.png" alt="">
+              <ul class="list">
+                <div class="title">DRP-BR ODA</div>
+                <li>
+                  高分辨率彩色喷墨打印机：1台
+                </li>
+                <li>
+                  光盘桶数量：2个
+                </li>
+                <li>
+                  <div>最大装载光盘数量：400张</div>
+                  <div>最多装载蓝光驱动器：8台</div>
+                  <div>光盘刻录系统DRP-BS Publisher1.0</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module black advantages blackBg" style="padding-top: 100px;">
+        <div class="module-title">
+          优势特色
+        </div>
+        <div class="module-english-title">
+          <p>
+            ADVANTAGES & FEATURES
+          </p>
+        </div>
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BR/advantage1.png" alt="">
+            <div class="text">
+              <div class="title">
+                安全合规
+              </div>
+              <div class="content">
+                采用刻录光盘的方式进行数据分发或移交，安全保密防篡改，满足相关行业对数据管理传输的特殊要求。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BR/advantage3.png" alt="">
+            <div class="text">
+              <div class="title">
+                自动高效
+              </div>
+              <div class="content">
+                可无缝对接前端业务系统，实现光盘刻录和光盘封面打印全程自动化操作，产品内置多台光驱，并行打印，效率高。
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BR/advantage2.png" alt="">
+            <div class="text">
+              <div class="title">
+                集中管控
+              </div>
+              <div class="content">
+                通过统一管理平台可实现多设备统一管理，支持多台设备同步刻录，满足集中管控的需要。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BR/advantage4.png" alt="">
+            <div class="text">
+              <div class="title">
+                功能丰富
+              </div>
+              <div class="content">
+                支持实时刻录、事后刻录等不同刻录方式，支持数据加密、防拷贝等功能，支持盘面信息自定义生成和打印。
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="module gray application" style="padding-top: 104px;">
+        <div class="module-title">
+          应用场景
+        </div>
+        <div class="module-english-title">
+          <p>
+            APPLICATION SCENARIO
+          </p>
+        </div>
+        <div class="introduce-paragraph">
+          翼存DRP-BR光盘刻录机可广泛应用于纪检、公安、法院、医疗、广电、教育、银行、企业等行业，满足批量电子文件制作光盘输出的需求。
+        </div>
+        <img class="application-image" src="./images/DRP_BR/application.png" alt="">
+      </div>
+    </div>
+
+    <div class="DRP-BF hide">
+      <div class="banner">
+        <div class="inner-box">
+          <img class="img" src="./images/DRP_BF/banner-image.png" />
+          <div class="content">
+            <h2 class="title">
+              DRP-BF 光盘摆渡机
+            </h2>
+            <p class="sub-title">
+              翼存DRP-BF光盘摆渡机实现了物理隔离条件下的不同安全级别网络之间的数据传输与迁移，采用全自动、高可靠性的机械手移动光盘来代替传统的手工刻盘交换，通过批量放入空白光盘盒，配置多个光驱，大大提高数据交换效率，减少人为因素影响。同时摆渡机可以与客户现有系统相结合，实现数据交换的审批、审计等功能，是实现物理隔离的不同网络之间数据交换的理想设备。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="module gray product-introduction" style="padding-top: 126px;">
+        <div class="module-title">
+          产品简介
+        </div>
+        <div class="module-english-title">
+          <p>
+            PRODUCT INTRODUCTION
+          </p>
+        </div>
+        <div class="product-introduction-image-text">
+          <div class="inner-box">
+            <div class="left">
+              <img src="./images/DRP_BF/introduce1.png" alt="">
+              <ul class="list">
+                <div class="title">DRP-BF 142S</div>
+                <li>
+                  单通道摆渡机
+                </li>
+                <li>
+                  内置服务器：2台
+                </li>
+                <li>
+                  内外网隔离电源
+                </li>
+                <li>
+                  光盘匣仓位数量：3个
+                </li>
+                <li>
+                  最大装载光盘数量：142张
+                </li>
+                <li>
+                  最多装载蓝光驱动器：4台
+                </li>
+                <li>
+                  光盘摆渡系统翼存DRP-Gate1.0
+                </li>
+              </ul>
+            </div>
+            <div class="right">
+              <img src="./images/DRP_BF/introduce2.png" alt="">
+              <ul class="list">
+                <div class="title">DRP-BF 400</div>
+                <li>
+                  双通道摆渡机
+                </li>
+                <li>
+                  内置服务器：2台
+                </li>
+                <li>
+                  内外网隔离电源
+                </li>
+                <li>
+                  支持双通道摆渡
+                </li>
+                <li>
+                  光盘桶数量：2个
+                </li>
+                <li>
+                  最大装载光盘数量：400张
+                </li>
+                <li>
+                  最多装载蓝光驱动器：4台
+                </li>
+                <li>
+                  光盘摆渡系统翼存DRP-Gate1.0
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module black advantages blackBg" style="padding-top: 100px;">
+        <div class="module-title">
+          优势特色
+        </div>
+        <div class="module-english-title">
+          <p>
+            ADVANTAGES & FEATURES
+          </p>
+        </div>
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage1.png" alt="">
+            <div class="text center">
+              <div class="content">
+                完全物理隔离，保证数据传输安全，符合保密要求。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage3.png" alt="">
+            <div class="text center">
+              <div class="content">
+                多重容错机制，摆渡数据的校验及错误预警。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage5.png" alt="">
+            <div class="text center">
+              <div class="content">
+                一个内网只需一套系统，可满足任意数量客户端同时操作需求。
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="advantage-list">
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage2.png" alt="">
+            <div class="text center">
+              <div class="content">
+                前置数据安全处理，并可实时更新杀毒软件。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage4.png" alt="">
+            <div class="text center">
+              <div class="content">
+                与用户现有系统有机结合，提高数据交换的时效性，并可实现权限控制等功能。
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="icon" src="./images/DRP_BF/advantage6.png" alt="">
+            <div class="text center">
+              <div class="content">
+                根据用户需求生成数据交换日志（如负责人、日期、时间、文件名称、文件大小等），即痕迹管理，以便事后审计追查等。
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="module gray application" style="padding-top: 104px;">
+        <div class="module-title">
+          应用场景
+        </div>
+        <div class="module-english-title">
+          <p>
+            APPLICATION SCENARIO
+          </p>
+        </div>
+        <div class="introduce-paragraph">
+          摆渡机作为物理隔离的网络之间数据传输的设备，广泛应用于军队、保密局、政府、公检法等机关单位。
+          如公安、检察院案例：
+          公安系统与检察院相关部门报送信息如交警违章信息发布等，现阶段采用信息线下移交报送方式，人工传递数据费时费力，采用摆渡机产品，可实现线上自动化跨地区、跨部门、跨网段的数据发布与报送，在确保信息安全的前提下大大提升了数据交换的效率，减少了人为因素影响。
+        </div>
+        <img class="application-image" src="./images/DRP_BF/application.png" alt="">
+      </div>
     </div>
   </div>
 </body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="./js/util.min.js"></script>
 <script src="./js/index.min.js"></script>
 </html>

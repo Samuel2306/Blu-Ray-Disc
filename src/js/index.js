@@ -55,3 +55,51 @@ function addWrapperClass(window) {
 
   callback && callback(window);
 }(window, addWrapperClass);
+
+$(document).ready(function(){
+  var list = [
+    'DRP-BL',
+    'DRP-BR',
+    'DRP-BF'
+  ];
+
+  $('.wrapper').click(function(e) {
+    if ($(".navbar-collapse").hasClass('in')) {
+      $(".navbar-collapse").removeClass('in');
+    }
+  });
+
+  $(".navbar-nav li").click(function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    var id = $(this).attr('id');
+
+    list.forEach(function(item) {
+      if (id.indexOf(item) > -1) {
+        $('.' + item).addClass('show');
+      } else {
+        $('.' + item).removeClass('show');
+      }
+      $('.wrapper').scrollTop(0);
+    });
+
+    $(".navbar-collapse").removeClass('in');
+  });
+
+  $(".mobile-tab li").click(function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    var id = $(this).attr('id');
+
+    list.forEach(function(item) {
+      if (id.indexOf(item) > -1) {
+        $('.' + item).addClass('show');
+      } else {
+        $('.' + item).removeClass('show');
+      }
+      $('.wrapper').scrollTop(0);
+    })
+  });
+});

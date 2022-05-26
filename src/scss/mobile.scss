@@ -1,0 +1,635 @@
+.mobile {
+  padding-bottom: 1.75rem;
+  min-width: auto;
+  .navbar {
+    display: none;
+  }
+  .mobile-tab {
+    position: fixed;
+    width: 100%;
+    height: 1.75rem;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        height: 0.95rem;
+        width: 0.95rem;
+        position: relative;
+        background: #000000;
+        border: 1px solid #C4C4C4;
+        border-radius: 50%;
+        position: relative;
+        vertical-align: middle;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .text {
+        font-size: 0.12rem;
+        color: #898989;
+        margin-top: 0.1rem;
+      }
+      &.active {
+        .text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+
+  .banner {
+    height: 98vw;
+
+    .content {
+      padding-top: 1.22rem;
+      .title {
+        height: 0.44rem;
+        font-size: 0.44rem;
+      }
+      .sub-title {
+        margin: 0.19rem auto 0;
+        max-width: 90vw;
+        font-size: 0.17rem;
+      }
+      video {
+        margin-top: 0.28rem;
+        width: 88vw;
+        height: 50vw;
+      }
+    }
+  }
+
+  .module {
+    padding: 0.22rem 0 0 0;
+    .module-title {
+      height: 0.4rem;
+      font-size: 0.4rem;
+    }
+    .module-english-title {
+      margin-top: 0.16rem;
+      height: 0.4rem;
+      p {
+        height: 0.14rem;
+        font-size: 0.14rem;
+        padding: 0 0.1rem;
+        height: 0.24rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+      };
+      &:after {
+        top: 8px;
+        width: 3.8rem;
+        height: 1px;
+        margin-left: -1.9rem;
+      }
+
+      &.complex-bg {
+        width: 4.6rem;
+        margin: 0.16rem auto 0;
+        overflow: hidden;
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+        }
+        p {
+          color: #fff;
+          width: 4.6rem;
+          height: 0.4rem;
+        }
+        .line {
+          width: 0.75rem;
+          height: 1px;
+          background-color: #898989;
+          &.left {
+            float: left;
+            margin: 8px 8px 0 0;
+          }
+          &.right {
+            float: right;
+            margin: 8px 0 0 8px;
+          }
+        }
+      }
+    }
+
+    .introduce-paragraph {
+      width: 88vw !important;
+      font-size: 0.2rem;
+      line-height: 0.34rem;
+      margin: 0.3rem auto 0;
+    }
+  }
+
+  .product-introduction-image-text {
+    width: 88vw !important;
+    .center_mobile {
+      width: 3.17rem;
+      display: block;
+      margin: 0 auto;
+    }
+    .center {
+      display: none;
+    }
+    .inner-box {
+      margin-top: 0.12rem;
+      & > div {
+        position: static !important;
+        width: 40vw;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.37rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .product-parameters-image {
+    width: 89vw !important;
+    margin: 0.42rem auto 0;
+    padding-bottom: 0.4rem;
+  }
+
+  .advantages {
+    .module-english-title {
+      width: 100%;
+      p {
+        width: 4.4rem;
+      }
+      &:after {
+        width: 6rem;
+        margin-left: -3rem;
+      }
+    }
+  }
+  .advantage-list {
+    display: block;
+    width: 88vw;
+    float: none;
+    font-size: 0;
+    margin-top: 0.5rem;
+    padding-bottom: 0;
+    & + .advantage-list{
+      margin-top: 0;
+      margin-left: auto;
+    }
+    &:last-child {
+      padding-bottom: 0.66rem;
+    }
+    & > li {
+      padding: 0.18rem 0;
+      margin-top: 0;
+      width: 100%;
+      border-bottom: 1px solid #787878;
+      .icon {
+        width: 1.06rem;
+        height: 1.06rem;
+      }
+      .text {
+        float: right !important;
+        width: 5.39rem !important;
+        margin: 0;
+        .title {
+          font-size: 0.25rem;
+          line-height: 0.25rem;
+        }
+        .content {
+          font-size: 0.2rem;
+          line-height: 0.3rem;
+          margin-top: 0.08rem;
+        }
+      }
+    }
+  }
+
+  .application {
+    text-align: center;
+    padding-bottom: 0.3rem;
+    .bg {
+      height: 72vw;
+    }
+
+    .module-title {
+      top: 0.61rem
+    }
+    .module-english-title {
+      top: 1.18rem;
+    }
+    .detail {
+      width: 89vw;
+      position: static;
+      height: auto;
+      margin: -3.8rem auto 0;
+      padding: 0.41rem 0.53rem;
+      transform: translate(0);
+      .main-image {
+        width: 75vw;
+        display: block;
+        float: none;
+      }
+    }
+
+    .others {
+      width: auto !important;
+      float: none !important;
+      text-align: left;
+      margin-top: 0.4rem;
+      p {
+        width: 75vw;
+        font-size: 0.2rem !important;
+        line-height: 0.34rem !important;
+        color: #fff;
+        margin-top: 0.37rem;
+      }
+      ul {
+        li {
+          margin: 1px;
+          width: 36.8vw !important;
+          height: 36.8vw !important;
+          .mask {
+            line-height: 36.8vw !important;
+            span {
+              position: static !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .DRP-BL {
+    .banner {
+      height: 5.4rem;
+      .inner-box {
+        width: 100%;
+        padding-top: 0.5rem;
+        .img {
+          width: 2.6rem;
+          float: none;
+          vertical-align: top;
+        }
+        .content {
+          width: 3.8rem;
+          float: none;
+          padding-top: 0.72rem;
+          margin-left: 0.45rem;
+          .title {
+            font-size: 0.35rem;
+            line-height: 0.35rem;
+            height: auto;
+          }
+          .sub-title {
+            font-size: 0.18rem;
+            line-height: 0.26rem;
+          }
+        }
+      }
+    }
+
+    .online-series {
+      padding: 1.26rem 0 0.99rem;
+      .series-box {
+        width: 100% !important;
+        margin-top: 0;
+        .series-item {
+          width: 1.65rem;
+          margin-top: 1rem;
+          .series-item-text {
+            width: 3rem;
+            height: 0.5rem;
+            font-size: 0.14rem;
+          }
+        }
+      }
+      .series-box1 {
+        .series-item:nth-child(1) {
+          height: 5.25rem;
+          width: 100%;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+        .series-item:nth-child(2) {
+          height: 7.25rem;
+          width: 100%;
+          margin: 1rem 0 0;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+        .series-item:nth-child(3) {
+          height: 6.65rem;
+          width: 100%;
+          margin: 1rem 0 0;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+
+      .series-box2 {
+        .series-item:nth-child(1) {
+          height: 4.25rem;
+          width: 100%;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+        .series-item:nth-child(2) {
+          height: 6.7rem;
+          width: 100%;
+          margin: 1rem 0 0;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+        .series-item:nth-child(3) {
+          height: 6.8rem;
+          width: 100%;
+          margin: 1rem 0 0;
+          .series-item-text {
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+    }
+
+    .offline-series {
+      height: 6.4rem;
+      .inner-box {
+        width: 100% !important;
+        overflow: hidden;
+        text-align: center;
+        img {
+          width: 3.5rem !important;
+          vertical-align: top;
+          float: none !important;
+        }
+        .content {
+          width: 3.3rem !important;
+          float: none !important;
+          padding: 0.8rem 0 0;
+          margin-left: 0.2rem;
+          .title {
+            width: 2.6rem;
+            height: 0.5rem;
+            font-size: 0.14rem;
+          }
+          .sub-title {
+            margin-top: 0.16rem;
+            font-size: 0.16rem;
+            line-height: 0.24rem;
+          }
+        }
+      }
+    }
+
+    .advantages {
+      padding-top: 1.09rem !important;
+      .advantage-list {
+        li {
+          height: auto !important;
+          min-height: 1.42rem;
+          img {
+            top: 0.18rem !important;
+          }
+          .text {
+            padding-left: 1.22rem;
+            float: none !important;
+            width: auto !important;
+          }
+        }
+      }
+    }
+
+    .application {
+      padding-top: 0.61rem !important;
+      .module-english-title {
+        top: 0 !important;
+      }
+      .application-image {
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  .DRP-BR {
+    .banner {
+      height: 3rem;
+      .inner-box {
+        width: 100%;
+        padding-top: 0.5rem;
+        .img {
+          width: 3.2rem;
+          float: none;
+          vertical-align: top;
+        }
+        .content {
+          width: 3.4rem;
+          float: none;
+          padding-top: 0.1rem;
+          margin-left: 0.45rem;
+          .title {
+            font-size: 0.35rem;
+            line-height: 0.35rem;
+            height: auto;
+          }
+          .sub-title {
+            font-size: 0.18rem;
+            line-height: 0.26rem;
+            margin-top: 0.1rem;
+          }
+        }
+      }
+    }
+
+    .product-introduction {
+      padding-top: 1.26rem !important;
+    }
+
+    .product-introduction-image-text {
+      margin-top: 0.8rem;
+      padding-bottom: 1.35rem;
+      width: 100% !important;
+      .inner-box {
+        width: 100%;
+        .left, .right {
+          width: 100%;
+          img {
+            margin: 0 auto;
+            width: 5.6rem;
+            display: block;
+          }
+          .list {
+            float: none;
+            text-align: center;
+            li {
+              width: 5rem;
+              margin: 0 auto;
+              text-align: left;
+              font-size: 0.3rem;
+              line-height: 0.42rem;
+              &:nth-child(2) {
+                margin-top: 0.16rem;
+              }
+            }
+          }
+        }
+
+        .right {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .advantages {
+      padding-top: 1.09rem !important;
+      .advantage-list {
+        li {
+          height: auto !important;
+          min-height: 1.42rem;
+          img {
+            top: 0.18rem !important;
+          }
+          .text {
+            padding-left: 1.22rem;
+            float: none !important;
+            width: auto !important;
+          }
+        }
+      }
+    }
+
+    .application {
+      padding-top: 0.61rem !important;
+      .module-english-title {
+        top: 0 !important;
+      }
+      .application-image {
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  .DRP-BF {
+    .banner {
+      height: 4.6rem;
+      .inner-box {
+        width: 100%;
+        padding-top: 0.5rem;
+        .img {
+          width: 3.2rem;
+          float: none;
+          vertical-align: top;
+        }
+        .content {
+          width: 3.4rem;
+          float: none;
+          padding-top: 0.5rem;
+          margin-left: 0.45rem;
+          .title {
+            font-size: 0.35rem;
+            line-height: 0.35rem;
+            height: auto;
+          }
+          .sub-title {
+            font-size: 0.18rem;
+            line-height: 0.26rem;
+            margin-top: 0.1rem;
+          }
+        }
+      }
+    }
+
+    .product-introduction {
+      padding-top: 1.26rem !important;
+    }
+
+    .product-introduction-image-text {
+      margin-top: 0.8rem;
+      padding-bottom: 1.35rem;
+      width: 100% !important;
+      .inner-box {
+        width: 100%;
+        .left, .right {
+          width: 100%;
+          img {
+            margin: 0 auto;
+            width: 4.6rem;
+            display: block;
+          }
+          .list {
+            float: none;
+            text-align: center;
+            li {
+              width: 5rem;
+              margin: 0 auto;
+              text-align: left;
+              font-size: 0.3rem;
+              line-height: 0.42rem;
+              &:nth-child(2) {
+                margin-top: 0.16rem;
+              }
+            }
+          }
+        }
+        .right {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .advantages {
+      padding-top: 1.09rem !important;
+      .advantage-list {
+        li {
+          height: auto !important;
+          min-height: 1.42rem;
+          img {
+            top: 0.18rem !important;
+          }
+          .text {
+            padding-left: 1.22rem;
+            float: none !important;
+            width: auto !important;
+            &.center {
+              left: 0 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .application {
+      padding-top: 0.61rem !important;
+      .module-english-title {
+        top: 0 !important;
+      }
+      .application-image {
+        margin-top: 0.75rem;
+      }
+    }
+  }
+}
